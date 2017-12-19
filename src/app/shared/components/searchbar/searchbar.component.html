@@ -1,0 +1,44 @@
+<div class="card">
+  <div class="card-body">
+    <form>
+      <div class="row">
+        <div class="col">
+          <input type="text" placeholder="Waar?" class="form-control">
+        </div>
+        <div class="col">
+          <div class="input-group date" id="checkin">
+            <input class="form-control" name="From" placeholder="Van?" type="text" value="">
+            <div class="input-group-addon">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="input-group date" id="checkout">
+            <input class="form-control" name="Until" placeholder="Tot?" type="text" value="">
+            <div class="input-group-addon">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="input-group">
+            <select id="guest" class="form-control" name="AmountOfGuests">
+              <option selected="selected" value="1">1 guest</option>
+              <option value="2">2 guests</option>
+              <option value="3">3 guests</option>
+            </select>
+            <div class="input-group-addon">
+              <i class="fa fa-users" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <button type="button" class="btn btn-default btn-primary btn-block">Search</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+
