@@ -16,6 +16,9 @@ const appRoutes: Routes = [
     },
     children: [
       {path: 'home', loadChildren: './pages/home/home.module#HomeModule'},
+      {path: 'login', loadChildren: './pages/login/login.module#LoginModule'},
+      {path: 'user', loadChildren: './pages/user/user.module#UserModule'},
+      {path: 'results', loadChildren: './pages/results/results.module#ResultsModule'},
     ]
   }
 ];

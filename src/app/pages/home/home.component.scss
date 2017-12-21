@@ -1,0 +1,43 @@
+$row-margin-top: 1em;
+
+.row {
+  &.movie {
+    > div.col {
+      padding: 0;
+      z-index: -101 !important;
+      > video {
+        display: block;
+        flex-grow: 1;
+        width: 100% !important;
+      }
+    }
+
+    > div.jumbotron {
+      position: relative;
+
+      padding: 0 !important;
+      flex-direction: column;
+
+    }
+  }
+
+  &.recommendation-row {
+    margin-top: $row-margin-top;
+  }
+
+  &.marketing-row {
+    margin-top: $row-margin-top;
+
+    > div.col-4 > h2 {
+      margin-bottom: 1em;
+    }
+  }
+
+  &.marketing-row-items {
+    margin-top: $row-margin-top;
+
+    > div.col-3 {
+      padding: 1em;
+    }
+  }
+}

@@ -1,5 +1,64 @@
-<div class="row justify-content-center">
+<div class="row movie">
+  <div class="col">
+    <video src="http://homemydayweb.azurewebsites.net/video/bg.mp4" style="width: 100%" muted autoplay loop></video>
+    <div id="endHeader"></div>
+  </div>
+</div>
+
+
+<div class="row justify-content-center" style="margin-top: 0.5em">
   <div class="col-10">
     <app-searchbar></app-searchbar>
   </div>
+
 </div>
+
+<div class="row justify-content-center recommendation-row">
+  <div class="col-3" *ngFor="let item of items">
+    <app-recommendation-item [item]="item"></app-recommendation-item>
+  </div>
+</div>
+<hr>
+<div class="row justify-content-center marketing-row">
+  <div class="col-4">
+    <h2>Verlaat je comfort zone, maar blijf het vertrouwde zoek, boek en ontdek!</h2>
+  </div>
+</div>
+<div class="row justify-content-center marketing-row-items">
+  <div class="col-3 text-center">
+    <i class="fa fa-building fa-5x" aria-hidden="true"></i>
+    <h4>We</h4>
+    <p>Wij zorgen voor de beste prijs-kwaliteit verhouding. En wij zorgen dat je binnenkomt in een schoon en veilig
+      tijdelijk thuis</p>
+  </div>
+  <div class="col-3 text-center">
+    <i class="fa fa-location-arrow fa-5x" aria-hidden="true"></i>
+    <h4>You</h4>
+    <p>Jij hoeft alleen maar te weten waar je heen wilt. Staat het niet op onze site, geen probleem, wij hebben daar een
+      oplossing voor.</p>
+  </div>
+  <div class="col-3 text-center">
+    <i class="fa fa-search fa-5x" aria-hidden="true"></i>
+    <h4>Local</h4>
+    <p>Laat je ontvangen door een warm thuis. Zij hebben de beste tips en tricks om je ervaringen onvergetelijk te
+      maken.</p>
+  </div>
+</div>
+<hr>
+<div class="row justify-content-center">
+  <div class="col-4">
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut sapien mi. Vestibulum nibh leo, gravida a nisi sed, suscipit congue tellus. Curabitur in tincidunt sapien. Vestibulum sollicitudin fringilla ipsum eget tincidunt. Sed ac mi luctus mi elementum commodo at eget arcu. Morbi vulputate, turpis vitae congue consectetur, diam ante euismod turpis, vitae hendrerit nulla nisi sed felis. Aliquam vel nisi eu nunc vulputate accumsan. Proin eu neque non ligula rutrum consequat.
+
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut sapien mi. Vestibulum nibh leo, gravida a nisi sed, suscipit congue tellus. Curabitur in tincidunt sapien. Vestibulum sollicitudin fringilla ipsum eget tincidunt. Sed ac mi luctus mi elementum commodo at eget arcu. Morbi vulputate, turpis vitae congue consectetur, diam ante euismod turpis, vitae hendrerit nulla nisi sed felis. Aliquam vel nisi eu nunc vulputate accumsan. Proin eu neque non ligula rutrum consequat.
+    </p>
+  </div>
+  <div class="col-4">
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe>
+    </div>
+  </div>
+</div>
+
+
+

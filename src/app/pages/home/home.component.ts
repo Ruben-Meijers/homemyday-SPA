@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  public items: string[] = ['Accomodation #1', 'Accomodation #2', 'Accomodation #3', 'Accomodation #4'];
+
   constructor() { }
 
   ngOnInit() {

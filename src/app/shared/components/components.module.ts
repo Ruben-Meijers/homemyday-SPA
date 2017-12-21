@@ -6,19 +6,24 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { SearchbarComponent } from './searchbar/searchbar.component';
+import {RouterModule} from '@angular/router';
+import { RecommendationItemComponent } from './recommendation-item/recommendation-item.component';
+import { ResultItemComponent } from './result-item/result-item.component';
 
 @NgModule({
   imports: [
     CommonModule,
     NgbModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    RouterModule
   ],
   exports: [
     NavbarComponent,
     FooterComponent,
-    SearchbarComponent
+    SearchbarComponent,
+    RecommendationItemComponent
   ],
-  declarations: [NavbarComponent, FooterComponent, SearchbarComponent]
+  declarations: [NavbarComponent, FooterComponent, SearchbarComponent, RecommendationItemComponent, ResultItemComponent]
 })
 export class ComponentsModule { }

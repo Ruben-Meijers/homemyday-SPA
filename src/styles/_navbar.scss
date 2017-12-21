@@ -1,0 +1,14 @@
+@import "variables";
+
+.navbar {
+  margin-bottom: 0;
+
+  &.navbar-light {
+    border: none;
+  }
+  &.fixed-top.scrolled {
+    background-color: $color1 !important;
+    transition: background-color 150ms linear;
+  }
+
+}
