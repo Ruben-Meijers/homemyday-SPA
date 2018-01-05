@@ -2,10 +2,40 @@
 
 .navbar {
   margin-bottom: 0;
+  color: $navbar-text-color;
+  padding: 0 !important;
 
   &.navbar-light {
     border: none;
+    color: $navbar-text-color;
+
+    .navbar-nav {
+      .nav-link {
+        color: $navbar-text-color !important;
+        padding: $navbar-padding;
+
+        &.active {
+          background-color: $color1;
+          padding: $navbar-padding;
+        }
+      }
+    }
+
+    a.navbar-brand {
+      padding: 0 1rem;
+      color: $navbar-text-color !important;
+    }
   }
+
+  &.bg-light {
+    background-color: $color-transparent !important;
+  }
+
+  &.bg-blue {
+    background-color: $color1 !important;
+    transition: background-color 150ms linear;
+  }
+
   &.fixed-top.scrolled {
     background-color: $color1 !important;
     transition: background-color 150ms linear;

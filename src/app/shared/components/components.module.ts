@@ -22,7 +22,8 @@ import { ResultItemComponent } from './result-item/result-item.component';
     NavbarComponent,
     FooterComponent,
     SearchbarComponent,
-    RecommendationItemComponent
+    RecommendationItemComponent,
+    ResultItemComponent
   ],
   declarations: [NavbarComponent, FooterComponent, SearchbarComponent, RecommendationItemComponent, ResultItemComponent]
 })

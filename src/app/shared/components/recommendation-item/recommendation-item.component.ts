@@ -7,7 +7,8 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class RecommendationItemComponent implements OnInit {
 
-  @Input() item: string;
+  // @TODO Make a interface for this
+  @Input() item: any;
 
   constructor() { }
 

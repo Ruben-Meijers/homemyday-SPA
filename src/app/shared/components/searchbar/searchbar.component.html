@@ -1,32 +1,40 @@
 <div class="card">
   <div class="card-body">
-    <form>
+    <form [formGroup]="searchForm" novalidate (ngSubmit)="onSubmit()">
       <div class="row">
         <div class="col">
-          <input type="text" placeholder="Waar?" class="form-control">
+          <input type="text" placeholder="Waar?" class="form-control" [ngbTypeahead]="search" formControlName="place">
         </div>
         <div class="col">
           <div class="input-group date" id="checkin">
-            <input class="form-control" name="From" placeholder="Van?" type="text" value="">
-            <div class="input-group-addon">
+            <input class="form-control" ngbDatepicker  #d="ngbDatepicker" name="From" placeholder="Van?" type="text" value="" formControlName="from">
+            <button class="input-group-addon" (click)="d.toggle()" type="button">
               <i class="fa fa-calendar-alt" aria-hidden="true"></i>
-            </div>
+            </button>
           </div>
         </div>
         <div class="col">
           <div class="input-group date" id="checkout">
-            <input class="form-control" name="Until" placeholder="Tot?" type="text" value="">
+            <input class="form-control" name="Until" placeholder="Tot?" type="text" value="" formControlName="until">
             <div class="input-group-addon">
-              <i class="fa fa-calendar-alt" aria-hidden="true"></i>
+              <!--@TODO Change to a range of date instead of two dates-->
+              <i class="fa fa-calendar-alt" aria-hidden="true" style="cursor: pointer;"></i>
             </div>
           </div>
         </div>
         <div class="col">
           <div class="input-group">
-            <select id="guest" class="form-control" name="AmountOfGuests">
-              <option selected="selected" value="1">1 guest</option>
+            <select id="guest" class="form-control" name="AmountOfGuests" formControlName="guests">
+              <option value="1">1 guest</option>
               <option value="2">2 guests</option>
               <option value="3">3 guests</option>
+              <option value="4">4 guests</option>
+              <option value="5">5 guests</option>
+              <option value="6">6 guests</option>
+              <option value="7">7 guests</option>
+              <option value="8">8 guests</option>
+              <option value="9">9 guests</option>
+              <option value="10">10 guests</option>
             </select>
             <div class="input-group-addon">
               <i class="fa fa-users" aria-hidden="true"></i>
@@ -34,7 +42,7 @@
           </div>
         </div>
         <div class="col">
-          <button type="button" class="btn btn-default btn-primary btn-block">Search</button>
+          <button type="submit" class="btn btn-default btn-primary btn-block">Search</button>
         </div>
       </div>
     </form>

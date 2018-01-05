@@ -5,7 +5,7 @@ import {ComponentsModule} from './components/components.module';
 @NgModule({
   imports: [
     CommonModule,
-    ComponentsModule
+    ComponentsModule,
   ],
   exports: [
     ComponentsModule,
